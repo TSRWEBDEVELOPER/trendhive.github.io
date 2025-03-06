@@ -1,58 +1,71 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: white;
-    text-align: center;
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #121212; /* Dark theme */
+    color: white;
+    text-align: center;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #333;
+    background: #1e1e1e;
     padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
+
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none;
     display: flex;
     justify-content: center;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+    color: #FFD700;
+    font-size: 18px;
 }
+
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #ff6347;
 }
 
 /* Hero Section */
 .hero {
-    padding: 80px;
-    background: linear-gradient(90deg, #ffcc00, #ff5500);
-    color: black;
-    font-size: 1.5rem;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
-/* Container */
+.hero h1 {
+    color: #FFD700;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Content Section */
 .container {
-    padding: 50px;
+    margin-top: 30px;
 }
-h2 {
-    font-size: 2rem;
-    color: #ffcc00;
+
+.container h2 {
+    font-size: 24px;
+    color: #FFD700;
 }
-p {
-    font-size: 1.2rem;
-    opacity: 0.8;
+
+.container p {
+    font-size: 16px;
+    color: #bbb;
 }
