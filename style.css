@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* Dark Mode Theme */
+/* Dark Theme */
 body {
     background-color: #121212;
     color: #fff;
@@ -16,30 +16,35 @@ body {
 /* Header Styling */
 header {
     background-color: #1a1a1a;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
 h1 {
     color: #ffd700;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 /* Navbar Styling */
+nav {
+    margin-top: 10px;
+}
+
 nav ul {
     list-style: none;
-    padding: 10px;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: #00bfff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -50,10 +55,10 @@ nav ul li a:hover {
 .hero {
     margin: 50px auto;
     max-width: 600px;
-    padding: 20px;
+    padding: 30px;
     background: #1a1a1a;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
 .hero h2 {
@@ -69,7 +74,7 @@ nav ul li a:hover {
 /* Button Styling */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #00bfff;
     color: #fff;
     text-decoration: none;
@@ -88,4 +93,5 @@ footer {
     margin-top: 30px;
     padding: 15px;
     background-color: #1a1a1a;
+    font-size: 14px;
 }
