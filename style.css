@@ -1,98 +1,113 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #000;
+}
+
+.logo {
+    color: #FFD700;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    background-color: #111;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.navbar a {
-    color: #FFD700;
+nav ul li a {
     text-decoration: none;
-    font-size: 18px;
-    margin: 0 15px;
+    color: #fff;
+    font-size: 16px;
     transition: 0.3s;
 }
 
-.navbar a:hover {
-    color: #FFC300;
+nav ul li a:hover, 
+nav ul li a.active {
+    color: #FFD700;
+    font-weight: bold;
 }
 
 /* Hero Section */
 .hero {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 300px;
-    background-color: rgba(26, 26, 26, 0.9);
+    background-color: #1a1a1a;
     margin: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-    padding: 20px;
+    border-radius: 10px;
 }
 
-.hero h1 {
+.hero-content {
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 28px;
     color: #FFD700;
 }
 
 .hero p {
-    font-size: 18px;
-    max-width: 600px;
-    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
-/* Call-to-Action Button */
 .cta-button {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #FFD700;
-    color: black;
+    background-color: #0099FF;
+    color: white;
+    text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
     transition: 0.3s;
-    text-decoration: none;
-    margin-top: 15px;
 }
 
 .cta-button:hover {
-    background-color: #FFC300;
+    background-color: #007ACC;
 }
 
 /* Trending Section */
-.trending-content {
-    margin: 20px auto;
-    max-width: 800px;
+.trending {
+    margin-top: 40px;
     padding: 20px;
-    background-color: rgba(26, 26, 26, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(255, 215, 0, 0.2);
 }
 
-.trending-content h2 {
+.trending h3 {
+    font-size: 22px;
     color: #FFD700;
+    margin-bottom: 15px;
 }
 
 .trending-content p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #111;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #000;
     font-size: 14px;
 }
+
