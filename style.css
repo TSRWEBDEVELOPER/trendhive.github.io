@@ -1,108 +1,92 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #0d0d0d;
+    background-color: #000;
     color: #fff;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 /* Navbar */
-header {
-    background-color: black;
+nav {
+    background-color: #000;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-}
-
-header h1 {
-    color: yellow;
-    font-size: 26px;
-    font-weight: bold;
 }
 
 nav a {
-    color: yellow;
+    color: #ffcc00;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
     color: #ffcc00;
+    text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #111, #222);
-    padding: 50px 20px;
-    border-radius: 12px;
-    width: 80%;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
     margin: 20px auto;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    width: 80%;
 }
 
-.hero h2 {
-    color: yellow;
+.hero h1 {
+    color: #ffcc00;
     font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 18px;
-    color: #ccc;
+    color: #ddd;
+    margin: 10px 0 20px;
 }
 
-/* Call to Action Button */
-.button {
+.hero .cta-btn {
     background-color: #007bff;
     color: white;
-    padding: 14px 22px;
-    text-decoration: none;
-    border-radius: 8px;
+    padding: 10px 20px;
     font-size: 16px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.button:hover {
+.hero .cta-btn:hover {
     background-color: #0056b3;
-    transform: scale(1.05);
 }
 
 /* Trending Section */
 .trending {
-    margin-top: 40px;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.trending h3 {
-    color: orange;
-    font-size: 22px;
-    font-weight: bold;
+.trending h2 {
+    color: #ffcc00;
+    font-size: 24px;
 }
 
 .trending p {
     font-size: 16px;
-    color: #ddd;
+    color: #bbb;
     margin: 5px 0;
 }
 
 /* Footer */
 footer {
-    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #666;
     font-size: 14px;
-    color: gray;
-    background: #000;
-    padding: 15px;
-    border-top: 2px solid yellow;
 }
